@@ -1,0 +1,162 @@
+/* -----------------------------798px--------------------------- */
+
+@media only screen and (max-width: 798px) {
+  .inline-padding {
+    padding-inline: 10px;
+  }
+  #header .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--secondary-bg);
+    padding: 10px;
+    height: 100vh;
+    width: 100%;
+    box-shadow: 0px 4px 6px #666;
+    border-radius: 5px;
+  }
+
+  #header .nav-links.active {
+    display: flex;
+  }
+
+  #header .hamburger-menu {
+    display: flex;
+  }
+
+  .nav-links li a {
+    font-size: 1rem;
+  }
+
+  #header {
+    padding-block: 10px;
+    .scroll-nav {
+      .title {
+        display: none;
+      }
+    }
+  }
+
+  /* ------------------Hero Section------------------- */
+
+  #hero {
+    height: auto;
+  }
+
+  .content-title {
+     margin-block: 4rem; 
+
+    .primary-title {
+      font-size: 3.5rem;
+      line-height: 45px;
+      overflow: hidden;
+
+      span {
+        display: block;
+      }
+    }
+
+    .sub-title {
+      overflow: hidden;
+
+      span {
+        display: block;
+        font-size: 1rem;
+      }
+    }
+
+    .secondary-title {
+      font-size: 2rem;
+      letter-spacing: 1px;
+      line-height: 25px;
+    }
+  }
+
+  .primary-title {
+    font-size: 2.5rem;
+    font-weight: 500;
+    letter-spacing: -3px;
+    line-height: 55px;
+    margin-top: 20px;
+    text-transform: uppercase;
+  }
+
+  #image-section {
+    padding-block: 22px;
+    .image-content {
+      .overlay {
+        width: 70vh;
+        height: 210px;
+      }
+    }
+  }
+
+
+  #about-container {
+    height: auto;
+  }
+
+
+    #brand .client {
+    margin-block: 0;
+    }
+
+    #brand .logos-slide img {
+     width: 15vw;
+    }
+
+  #brand .logos-slide-rev img {
+    display: none;
+  }
+
+  #service-project {
+    height: auto;
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 30px;
+    }
+    .item h4 {
+      padding-block: 20px;
+    }
+  }
+
+  #footer {
+    height: auto;
+
+    .social-links li a {
+        font-size: 1rem;
+    }
+
+    .info {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 40px;
+
+      .rights {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+
+  .branding {
+    /* max-width: 100%; */
+
+    .logo::before {
+    left: 0;
+    background: none;
+    }
+    .logo::after {
+    right: 0;
+    background: none;
+    }
+  }
+}
